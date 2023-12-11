@@ -1,13 +1,9 @@
-archivo = open('tabla-n.txt', 'w')
-
+archivo = open('tabla-n.txt', 'a')
 
 
 def tabla(n):
     for i in range(1,11):
-        print(n * i)
+        archivo.write(str(n * i) + '\n')
+    return
 
-
-
-
-archivo.write(tabla())
-
+tabla(7)
